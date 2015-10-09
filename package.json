@@ -4,7 +4,6 @@
   "description": "Importing trading log from BTC exchange and compiling track record from it",
   "main": "index.coffee",
   "scripts": {
-    "install": "./node_modules/.bin/knex migrate:latest",
     "start": "./node_modules/.bin/coffee server.coffee",
     "test": "./node_modules/.bin/mocha"
   },

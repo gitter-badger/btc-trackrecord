@@ -1,3 +1,9 @@
 language: node_js
 node_js:
   - "4.1"
+addons:
+  postgresql: "9.4"
+before_script:
+  - psql -c 'create database trackrecord;' -U postgres
+env:
+  - PG_CONNECTION_STRING="pgsql://postgres@localhost/trackrecord"
